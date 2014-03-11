@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  has_many :woofs
   has_secure_password
   before_validation :prep_email
   before_save :create_avatar_url
