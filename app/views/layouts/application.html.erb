@@ -10,7 +10,7 @@
 <body>
 
 <% if current_user %>
-    <%= link_to "Log Out", sessions_destroy_path %>
+    <%= link_to "Get out of here", sessions_destroy_path %>
 <% else %>
     <%= form_tag sessions_create_path do %>
         <%= text_field_tag :username, nil, placeholder: "username" %>
