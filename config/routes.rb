@@ -1,4 +1,6 @@
 Bark::Application.routes.draw do
+  resources :relationships
+
   resources :woofs
 
   get "sessions/new"

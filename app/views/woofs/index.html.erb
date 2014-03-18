@@ -3,8 +3,8 @@
     <h1>Create a Woof</h1>
     <p>
     <%= form_for @woof do |f| %>
-        <%= f.text_area :content, class: 'woofText' %>
-        <%= f.submit "woof!" %>
+        <%= f.text_area :content, class: 'barkText col-md-12' %>
+        <%= f.submit "Woof!", class: "btn btn-success" %>
     <% end %>
     </p>
 </div>
