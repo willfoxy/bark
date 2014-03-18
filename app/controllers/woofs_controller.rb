@@ -1,5 +1,10 @@
 class WoofsController < ApplicationController
   
+  def index
+    @woofs = Woof.all include: :user
+    @woof = Woof.new
+  end
+
   def create
     @woof = Woof.new(woof_params)
     @woof.user_id = current_user.id
